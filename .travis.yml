@@ -1,5 +1,7 @@
 language: ruby
 rvm:
-  - 2.4
+  - 2.4.2
 script:
-  - bundle exec rspec .
+  - bundle install
+  - bundle exec rspec CodeQuizzes -fd
+  - bundle exec rspec MiniTest -fd
