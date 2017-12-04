@@ -1,5 +1,5 @@
 require_relative '../lib/bubbleSort'
-describe "#sort_integers" do
+describe "sort_integers" do
   it "moves the smallest integer to the front of the array" do
     array = [8, 1, 5, 3, 4]
     expect(array.makeBubble ).to start_with 1
