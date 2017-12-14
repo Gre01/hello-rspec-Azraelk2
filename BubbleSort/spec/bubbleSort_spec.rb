@@ -1,5 +1,6 @@
 require_relative '../lib/bubbleSort'
-describe "sort_integers" do
+describe '#bubble_sort' do
+context  "sort_integers" do
   it "moves the smallest integer to the front of the array" do
     array = [8, 1, 5, 3, 4]
     expect(array.makeBubble ).to start_with 1
@@ -36,7 +37,7 @@ describe "sort_integers" do
   end
 end
 
-describe "#sort_other_numbers" do
+context  "#sort_other_numbers" do
   it "sort decimals" do
     array = [2.2, 3.3, 5.5, 1.1]
     expect( array.makeBubble ).to eq([1.1, 2.2, 3.3, 5.5])
@@ -58,7 +59,7 @@ describe "#sort_other_numbers" do
   end
 end
 
-describe "#check_bubblesort" do
+context  "#check_bubblesort" do
   it "handles an empty array" do
     array = []
     expect( array.makeBubble ).to eq []
@@ -69,7 +70,7 @@ describe "#check_bubblesort" do
     expect( array.makeBubble ).to eq [51]
   end
 end
-describe "#sort_words" do
+context  "#sort_words" do
   it "sort similar named words" do
     array = ["Pomarańcza", "Pomara", "Pomarańcz", "Pomarańczowy", "Pomarańczkowy"]
     expect( array.makeBubble ).to eq(["Pomara", "Pomarańcz", "Pomarańcza", "Pomarańczkowy", "Pomarańczowy"])
@@ -84,4 +85,5 @@ describe "#sort_words" do
     array = ["Abakus", "Ananas", "Agrafka"]
     expect(array.makeBubble).to eq(["Abakus", "Agrafka", "Ananas"])
   end
+end
 end
