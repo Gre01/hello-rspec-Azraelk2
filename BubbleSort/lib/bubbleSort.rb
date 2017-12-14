@@ -1,4 +1,4 @@
-class Array
+class bubble_sort
   def makeBubble
     length.times do |j|
       for i in 1...(length - j)
