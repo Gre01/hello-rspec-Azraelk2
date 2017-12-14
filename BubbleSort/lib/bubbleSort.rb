@@ -2,11 +2,15 @@ class Array
   def makeBubble
     length.times do |j|
       for i in 1...(length - j)
-        if self[i] < self[i - 1]
-          self[i], self[i - 1] = self[i - 1], self[i]
-        end
+        zamiana(i)
       end
     end
     self
+  end
+  
+  def zamiana(i)
+    if self[i] < self[i - 1]
+          self[i], self[i - 1] = self[i - 1], self[i]
+    end
   end
 end
