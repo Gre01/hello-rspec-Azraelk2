@@ -1,4 +1,4 @@
-require_relative '../lib/bubbleSort'
+require_relative '../lib/bubble_sort'
 describe '#bubble_sort' do
 context  "sort_integers" do
   it "moves the smallest integer to the front of the array" do
